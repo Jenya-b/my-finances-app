@@ -1,4 +1,4 @@
-import { StrictMode } from 'react';
+import { StrictMode, Suspense } from 'react';
 import { RouterProvider } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
 
@@ -9,8 +9,10 @@ import { theme } from 'styles/theme';
 export const App = () => (
   <StrictMode>
     <ThemeProvider theme={theme}>
-      <RouterProvider router={router} />
-      <GlobalStyles />
+      <Suspense fallback={<div>Loading..</div>}>
+        <RouterProvider router={router} />
+        <GlobalStyles />
+      </Suspense>
     </ThemeProvider>
   </StrictMode>
 );

@@ -6,9 +6,9 @@ export const Wrapper = styled.div`
   background: ${({ theme }) => theme.colors.backgroundBase};
   display: grid;
   grid-template: ${({ theme }) => theme.sizes.header.height}px 1fr ${({ theme }) =>
-      theme.sizes.footer.height}px / ${({ theme }) => theme.sizes.sidebar.width}px 1fr;
+      theme.sizes.footer.height}px / 1fr;
   grid-template-areas:
-    'header header'
-    'sidebar content'
-    'footer footer';
+    'header'
+    'content'
+    'footer';
 `;

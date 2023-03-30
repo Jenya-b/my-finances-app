@@ -10,7 +10,6 @@ export const theme: ITheme = {
   },
   sizes: {
     header: { height: 80 },
-    sidebar: { width: 150 },
     footer: { height: 80 },
     logo: { height: 45, width: 45 },
   },

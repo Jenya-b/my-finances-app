@@ -1,4 +1,4 @@
 export const path = {
-  distribution: 'distribution',
+  home: '/',
   setAside: 'set-aside',
 };

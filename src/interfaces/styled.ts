@@ -8,7 +8,6 @@ export interface ITheme {
   };
   sizes: {
     header: { height: number };
-    sidebar: { width: number };
     footer: { height: number };
     logo: { height: number; width: number };
   };

@@ -32,4 +32,8 @@ export const List = styled.ul`
 
 export const Link = styled(NavLink)`
   color: ${({ theme }) => theme.colors.textPrimary};
+
+  &.active {
+    color: ${({ theme }) => theme.colors.textSecondary};
+  }
 `;
