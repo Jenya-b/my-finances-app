@@ -1,5 +1,11 @@
 export interface ITheme {
   colors: {
-    primary: string;
+    backgroundBase: string;
+    borderPrimary: string;
+  };
+  sizes: {
+    header: { height: number };
+    sidebar: { width: number };
+    footer: { height: number };
   };
 }

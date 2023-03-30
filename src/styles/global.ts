@@ -3,4 +3,7 @@ import { normalize } from 'styled-normalize';
 
 export default createGlobalStyle`
 	${normalize}
+	body {
+		background: ${({ theme }) => theme.colors.backgroundBase};
+	}
 `;
