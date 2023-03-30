@@ -3,5 +3,5 @@ import { App } from './App';
 
 test('renders App', () => {
   render(<App />);
-  expect(screen.getByText(/my finances/i)).toBeInTheDocument();
+  expect(screen.getByText(/layout/i)).toBeInTheDocument();
 });
