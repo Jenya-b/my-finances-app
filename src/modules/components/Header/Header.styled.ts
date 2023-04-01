@@ -1,5 +1,5 @@
 import { NavLink } from 'react-router-dom';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 export const StyledHeader = styled.header`
   grid-area: header;
@@ -25,7 +25,7 @@ export const LogoIcon = styled.div`
   color: ${({ theme }) => theme.colors.textPrimary};
 `;
 
-export const List = styled.ul`
+export const listStyles = css`
   display: flex;
   column-gap: 15px;
 `;
